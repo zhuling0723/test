@@ -4,20 +4,24 @@
   <title>首页</title>
   <meta charset="utf-8">
   <style>
-  *{margin:0;}
+  *{margin:0;padding:0;}
+  *a:hover{color:}
+  .body{
+    width:1440px;
+  }
   .header{
-    height:500px;
-    width:100%;
-    background-image:url(/Users/celene/Documents/celene/test1/img/header.png);
+    height:200px;
+    width:1440px;
   }
   .header-icon{
     height:25px;
-    width:88px;
-    margin-top:55px;
-    background-image: url(/Users/celene/Documents/celene/test1/img/header-icon.png);
+    width:50px;
+    margin-top:60px;
+    margin-left: 30px;
     background-repeat: no-repeat;
     background-position: center;
     float: right;
+    display:block;
   }
   .contact{
     height:22px;
@@ -25,6 +29,7 @@
     text-align: center;
     margin-top:56px;
     float: right;
+    display: block;
   }
   .journal{
     height:22px;
@@ -32,6 +37,7 @@
     text-align: center;
     margin-top:56px;
     float: right;
+    display: block;
   }
   .work{
     height:22px;
@@ -39,6 +45,7 @@
     text-align: center;
     margin-top:56px;
     float: right;
+    display: block;
   }
   .services{
     height:22px;
@@ -47,6 +54,7 @@
     margin-top:56px;
     border-bottom:3px solid red;
     float:right;
+    display: block;
   }
   .story{
     height:22px;
@@ -54,16 +62,20 @@
     text-align: center;
     margin-top:56px;
     float:right;
+    display: block;
   }
-  a{
+  .header a{
     color:#666;
-    text-decoration: none;
+    text-decoration:none;
   }
-  a:hover{
-    color:blue;
+  .banner{
+    height:500px;
+    width:1440px;
+    background-image:url(/Users/celene/GitHub/test/img/banner.png);
+    margin-top:-200px;
   }
   .index-1{
-    height:330px;
+    height:200px;
     width:1000px;
     margin:0 auto;
   }
@@ -83,16 +95,17 @@
     text-align: center;
   }
   .index-1-article{
-    width: 1140px;
-    height:410px;
+    width: 960px;
+    margin:0 auto;
+    overflow: hidden;
   }
   .index-1-article01{
-    height:354px;
-    width:467px;
+    width:466px;
     size:14px;
     line-height:30px;
     margin-left:0px;
-    margin-top:120px;
+    margin-top:0px;
+    float: left;
     color:rgb(148, 148, 148);
   }
   .index-1-article01 span{
@@ -100,59 +113,56 @@
     color:rgb(44, 46, 55);
   }
   .index-1-article02{
-    height:354px;
-    width:580px;
+    height:468px;
+    width:428px;
     background-image: url(/Users/celene/Documents/celene/test1/img/index-1-article02.png);
     background-repeat: no-repeat;
     float:right;
-    margin-top:-340px;
+    margin-top:0px;
   }
   .index-1-article1{
-    height:518px;
-    width:1140px ;
+    width:960px;
+    margin:0 auto;
+    overflow: hidden;
+    margin-top:122px;
   }
-
   .index-1-article03{
     height:248px;
     width:300px;
     background-image: url(/Users/celene/Documents/celene/test1/img/index-1-article03.png);
     background-repeat: no-repeat;
-    margin-left:0px;
-    margin-top:280px;
+    float: left;
   }
   .index-1-article04{
-    height:272px;
     width:440px;
     size:14px;
     color:rgb(148, 148, 148);
     float: right;
-    margin-right:135px;
-    margin-top:-260px;
   }
   .index-1-article04 span{
     font-weight: bold;
     color:rgb(44, 46, 55);
   }
   .index-2{
-    height:700px;
-    width:100%;
+    width:1440px;
+    overflow:hidden;
+    margin-top:148px;
   }
   .index-2-article01{
     height:700px;
-    width:960px;
+    width:66.6666%;
     background-image: url(/Users/celene/Documents/celene/test1/img/index-2-article01.png);
-    margin-top:900px;
+    float:left;
   }
   .index-2-article02{
     height:700px ;
-    width: 470px;
-    float: right;
+    width:33.3333%;
+    float:right;
   }
   .index-2-article02-1{
     height:350px;
     width:470px;
     background-image: url(/Users/celene/Documents/celene/test1/img/index-2-article02-1.png);
-    margin-top:-700px;
   }
   .index-2-article02-2{
     height:224px;
@@ -170,44 +180,197 @@
     color:rgb(114, 117, 120);
     margin-left:-200px;
   }
+  .index-3{
+    width:1116px;
+    height:758px;
+    overflow:hidden;
+    margin-left:136px;
+    margin-top:164;
+  }
+  .index-3-left{
+    width:546px;
+    height:440px;
+    float:left;
+    background-image: url(/Users/celene/GitHub/test/img/index-3-left.png);
+    background-repeat: no-repeat;
+  }
+  .index-3-center{
+    width:250px;
+    height:290px;
+    background-image: url(/Users/celene/GitHub/test/img/index-3-center.png);
+    position: relative;
+    z-index:2;
+    top:150px;
+    left:300px;
+    background-repeat: no-repeat;
+  }
+  .index-3-right{
+    height:468px;
+    width:506px;
+    float:right;
+  }
+  .index-3-line{
+    height:2px;
+    width:36px;
+    background-image: url(/Users/celene/GitHub/test/img/index-3-line.png);
+    background-repeat: no-repeat;
+  }
+  .index-3-text{
+    line-height:1.5;
+    size:14px;
+    color: #949494;
+  }
+  .index-3-text h3{
+    line-height:2.7;
+    size:25px;
+    color:#2c2e37;
+  }
+  .index-3-text span{
+    color:#2c2e37;
+    size:15px;
+    line-height:1.8;
+  }
+  .fotter{
+    height:300px;
+    width:1440px;
+    color:#ffffff;
+    background-color:#2c2e37;
+    padding-top:82px;
+    padding-left:150px;
+    padding-right:164px;
+  }
+  .fotter a{
+    color:#ffffff;
+    text-decoration:none;
+  }
+  .logo{
+    height:20px;
+    width:20px;
+    background-image: url(/Users/celene/GitHub/test/img/logo.png);
+    background-repeat: no-repeat;
+    float: left;
+  }
+  .fotter-left2 {
+    margin-left:100px;
+    size:13px;
+    line-height:32px;
+    float: left;
+    margin-top:-6px;
+
+  }
+  .fotter-left3{
+    margin-left:100px;
+    size:13px;
+    line-height:32px;
+    float: left;
+    margin-top:-6px;
+  }
+  .fotter-left4{
+    margin-left:100px;
+    float: left;
+  }
+  .fotter-logo1{
+    height:24px;
+    width:18px;
+    background-image: url(/Users/celene/GitHub/test/img/facebook.png);
+    float: left;
+    background-repeat: no-repeat;
+  }
+  .fotter-logo2{
+    height:20px;
+    width:22px;
+    background-image: url(/Users/celene/GitHub/test/img/twitter.png);
+    margin-left:14px;
+    float: left;
+    background-repeat: no-repeat;
+  }
+  .fotter-left5{
+    margin-left:80px;
+    float:left;
+
+  }
+  .fotter-left5 .text1{
+    size:14px;
+    line-height:20px;
+  }
+  .fotter-left5 .text2{
+    size:12px;
+    line-height:;
+  }
+  .fotter-left5 .input{
+    width: 340px;
+    height:42px;
+    margin-top:32px;
+    background-color:#2c2e37;
+    color:#ffffff;
+    text-indent:2em;
+  }
+  .fotter-left5 .arrow{
+    margin-left:-33px;
+  }
 </style>
 </head>
 
 
-  <body>
+  <body id="body">
     <div class="header">
-        <div class="header-icon"><a href=""></a></div>
-        <div class="contact"><a href="">contact</a></div>
-        <div class="journal"><a href="">journal</a></div>
-        <div class="work"><a href="">work</a></div>
-        <div class="services"><a href="">services</a></div>
-        <div class="story"><a href="">our story</a></div>
+      <div class="right">
+        <a href="" class="header-icon"><img src="/Users/celene/GitHub/test/img/header-icon.png"/></a>
+        <a href="" class="contact">contact</a>
+        <a href="" class="journal">journal</a>
+        <a href="" class="work">work</a>
+        <a href="" class="services">services</a>
+        <a href="" class="story">our story</a>
+      </div>
     </div>
-  <div class="index-1">
-      <div class="index-1-list">
+    <div class="banner"></div>
+    <div class="index-1">
+        <div class="index-1-list">
         <div class="index-1-icon"></div>
         <div class="index-1-text">WE START OUR PROCESS<br/>WITH BRANDING</div>
       </div>
-      <div class="index-1-article">
+    </div>
+    <div class="index-1-article">
         <div class="index-1-article01"><span>LOREM IPSUM DOLOR SIT AMET</span>, consecteturadipiscing elit. Sed eget commodo risus. Nulla placerat nunc nulla, idorta sapien varius sed. In vel est a dui sodales varius. In facilisis,risus non maximus scelerisque, mauris massa vehicula tortor, nec vestibulumipsum sem et magna. Maecenas in purus ut arcu pellentesque tempus. Curabiturviverra quis ipsum vitae hendrerit. Aenean nec consequat neque, non euismodsapien. Nullam fringilla justo sed consequat pellentesque. Praesent egestasporta vestibulum. <br/><br/>Nullam gravida odio quis ligula hendrerit, a consectetur nulla tincidunt. Ut finibus, quam id sodales tempus, neque diam fringilla lectus, vel ultricies est neque eget metus. Duis id efficitur libero.Etiam facilisis, ipsum volutpat ultrices finibus, orci sem consectetur leo,in blandit ipsum ex vitae lorem. Praesent placerat odio in lectus maximus,vel vehicula nulla scelerisque. Nullam et feugiat nibh. Nullam ultrices libero nec eros commodo, a tempus metus condimentum.</div>
         <div class="index-1-article02"></div>
-      <div class="index-1-article1">
+    </div>
+    <div class="index-1-article1">
         <div class="index-1-article03"></div>
         <div class="index-1-article04"><span>User interface and experience</span><br/>
         Nullam gravida odio quis ligula hendrerit, a consectetur nulla tincidunt. Ut finibus, quam id sodales tempus, neque diam fringilla lectus, vel ultricies est neque eget metus. <br/><br/><span>super easy to find information</span><br/>
         Nullam gravida odio quis ligula hendrerit, a consectetur nulla tincidunt. Ut finibus, quam id sodales tempus, neque diam fringilla lectus, vel ultricies est neque eget metus. Duis id efficitur libero.</div>
         </div>
-      </div>
-  </div>
-  <div class="index-2">
+    </div>
+    <div class="index-2">
     <div class="index-2-article01"></div>
     <div class="index-2-article02">
       <div class="index-2-article02-1"></div>
       <div class="index-2-article02-2">To design is to communicate clearly by<br/>whatever means you can control or master.<br/><br/>
       <span>- Cindy Jeferson</span></div>
     </div>
+
   </div>
-  <div class="index-3"></div>
-  <div class="fotter"></div>
+    <div class="index-3">
+      <div class="index-3-left">
+        <div class="index-3-center"></div>
+      </div>
+      <div class="index-3-right">
+        <div class="index-3-line"></div>
+        <div class="index-3-text">
+          <h3>earliest examples</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget commodo risus. Nulla placerat nunc nulla, id porta sapien varius sed. In vel est a dui sodales varius. In facilisis, risus non maximus scelerisque, mauris massa vehicula tortor, nec vestibulum ipsum sem et magna. Maecenas in purus ut arcu pellentesque tempus. Curabitur viverra quis ipsum vitae hendrerit. Aenean nec consequat neque, non euismod sapien. Nullam fringilla justo sed consequat pellentesque. Praesent egestas porta vestibulum. <br/><br/></p>
+          <p><span>Nullam gravida odio</span><br/>Nullam gravida odio quis ligula hendrerit, a consectetur nulla tincidunt. Ut finibus, quam id sodales tempus, neque diam fringilla lectus, vel ultricies est neque eget metus. Duis id efficitur libero. Etiam facilisis, ipsum volutpat ultrices finibus, orci sem consectetur leo, in blandit ipsum ex vitae lorem. Praesent placerat odio in lectus maximus, vel vehicula nulla scelerisque. Nullam et feugiat nibh. Nullam ultrices libero nec eros commodo, a tempus metus condimentum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="fotter">
+      <div class="logo"></div>
+      <div class="fotter-left2"><p><a href="">Our Team</a></br><a href="">Contact Us</a></br><a href="">Support</a></br><a href="">Blog</a></p></div>
+      <div class="fotter-left3"><p><a href="">Exclusive Offers</a></br><a href="">Licencing</a></br><a href="">Privacy Policy</a></br><a href="">Refund Policy</a></p></div>
+      <div class="fotter-left4">
+        <div class="fotter-logo1"></div>
+        <div class="fotter-logo2"></div>
+      </div>
+      <div class="fotter-left5"><p><span class="text1">Join Our newsletter</span></br><span class="text2">Join up and get notified about new products, updates and special offers.</span></p><input class="input" type="text" name="email" value="Enter your email"><a href="" class="arrow"><input type="image" src="/Users/celene/GitHub/test/img/arrow.png"></a></div>
+    </div>
   </body>
 </html>

@@ -1,28 +1,547 @@
 <html>
   <head>
-    <title>测试</title>
+    <title>电商网站首页</title>
     <meta charset="utf-8">
   <style>
-  .box{
-    width:px;
-    background-color:red;
+  *{padding:0px;}
+  .body{
+    width:1200px;
+    margin:0 auto;
+  }
+  .banner{
+    width:1200px;
+    height:600px;
+    background-image: url(/Users/celene/GitHub/test2/img/banner.png);
     overflow: hidden;
   }
-  .box>div{
-    margin:50%;
+  .banner-icon{
+    width:76px;
+    height:30px;
+    background-color:#ffffff;
+    margin:40px auto;
+    text-align: center;
+    size:10px;
+    line-height:30px;
+    color:#242626;
   }
-  .left{
-    height:100px;
+  .banner-text1{
+    text-align: center;
+    font-size:21px;
+    color:#242626;
+    line-height:70px;
+  }
+  .banner-text2{
+    text-align: center;
+    font-size:18px;
+    color:#242626;
+    line-height:28px;
+    margin-top:33px;
+  }
+  .banner-icon-left{
+    width:50px;
+    height:50px;
+    background-color:#ffffff;
+    background-image: url(/Users/celene/GitHub/test2/img/Left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left:50px;
+    margin-top:-70px;
+  }
+  .banner-icon-right{
+    width:50px;
+    height:50px;
+    background-color:#ffffff;
+    background-image: url(/Users/celene/GitHub/test2/img/Rigth.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right:50px;
+    margin-top:-50px;
+    float: right;
+  }
+  .banner-left{
+    width:132px;
+    height:40px;
+    background-image: url(/Users/celene/GitHub/test2/img/Photo.png);
+    background-repeat: no-repeat;
+    margin-left:50px;
+    margin-top:190px;
+  }
+  .banner-left h5{
+    float: right;
+    line-height:40px;
+    size:12px;
+  }
+  .banner-center{
+    width:58px;
+    height:40px;
+    float: left;
+    margin-left:560px;
+    margin-top:-33px;
+  }
+  .bullet-1{
+    margin-top:10px;
+  }
+  .bullet-2{
+    margin-top:10px;
+    margin-left:6px;
+  }
+  .bullet-3{
+    margin-top:10px;
+    margin-left:6px;
+  }
+  .banner-right{
+    width:px;
+    height:40px;
+    float: right;
+    margin-right:48px;
+    margin-top:-40px;
+  }
+  .comment-text{
+    line-height:40px;
+    float: right;
+    margin-left:6px;
+  }
+  .comment{
+    width:14px;
+    height: 40px;
+    background-image: url(/Users/celene/GitHub/test2/img/Comment.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+    margin-left:10px;
+  }
+  .like-text{
+    float: right;
+    line-height:40px;
+    margin-left:6px;
+  }
+  .like{
+    width:14px;
+    height:40px;
+    background-image: url(/Users/celene/GitHub/test2/img/Like.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+    margin-left:46px;
+  }
+  .date-text{
+    float: right;
+    line-height:40px;
+  }
+  .date{
+    width:14px;
+    height:40px;
+    background-image: url(/Users/celene/GitHub/test2/img/Date.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    float:right;
+    margin-right:6px;
+  }
+  .main{
+    width:1200px;
+    height:600px;
+    background-image: url(/Users/celene/GitHub/test2/img/Image2.png);
+    overflow: hidden;
+  }
+  .travel{
+    width:76px;
+    height:30px;
+    background-color:#ffffff;
+    text-align: center;
+    size:10px;
+    line-height:30px;
+    color:#242626;
+    margin-top:120px;
+    margin-left:90px;
+  }
+  .text{
+    font-size:42px;
+    color:#ffffff;
+    margin-top:30px;
+    margin-left:90px;
+  }
+  .main-comment{
+    width:400px;
+    height:30px;
+    color: #ffffff;
+    margin-left:90px;
+  }
+  .main-deat{
+    width:14px;
+    height:30px;
+    background-image: url(/Users/celene/GitHub/test2/img/Date-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+  }
+  .main-deat-text{
+    font-size:12px;
+    line-height:30px;
+    float: left;
+    margin-left:8px;
+  }
+  .main-like{
+    width:14px;
+    height:30px;
+    background-image: url(/Users/celene/GitHub/test2/img/Like-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    margin-left: 24px;
+  }
+  .main-like-text{
+    font-size:12px;
+    line-height:30px;
+    float: left;
+    margin-left:8px;
+  }
+  .main-comm{
+    width:14px;
+    height:30px;
+    background-image: url(/Users/celene/GitHub/test2/img/Comment.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    margin-left: 10px;
+  }
+  .main-comm-text{
+    font-size:12px;
+    line-height:30px;
+    float: left;
+    margin-left:6px;
+  }
+  .main-bytext{
+    font-size:12px;
+    line-height:30px;
+    float: left;
+    margin-left:34px;
+  }
+  .main-bytext span{
+    color: #62c1a9;
+  }
+  .main-left{
+    width:300px;
+    height:166px;
+    border-top:1px solid #79585a;
+    border-bottom:6px solid #54ae97;
+    margin-left:90px;
+    margin-top:100px;
+    color:#ffffff;
+    float: left;
+  }
+  .main-left h1{
+    font-size:10px;
+    margin-top:26px;
+  }
+  .main-left h2{
+    font-size:16px;
+    margin-top:5px;
+    line-height:26px;
+  }
+  .main-left-date{
+    width:14px;
+    height:14px;
+    background-image: url(/Users/celene/GitHub/test2/img/Date-white.png);
+    margin-top:10px;
+  }
+  .main-left-date h2{
+    font-size:12px;
+    margin-bottom:42px;
+    margin-left:8px;
+  }
+  .main-center{
+    width:300px;
+    height:166px;
+    border-top:1px solid #79585a;
+    margin-left:66px;
+    margin-top:100px;
+    color:#ffffff;
+    float: left;
+  }
+  .main-center h1{
+    font-size:10px;
+    margin-top:26px;
+  }
+  .main-center h2{
+    font-size:16px;
+    margin-top:5px;
+    line-height:26px;
+  }
+  .main-center-date{
+    width:14px;
+    height:14px;
+    background-image: url(/Users/celene/GitHub/test2/img/Date-white.png);
+    margin-top:10px;
+  }
+  .main-center-date h2{
+    font-size:12px;
+    margin-bottom:42px;
+    margin-left:8px;
+  }
+  .main-right{
+    width:300px;
+    height:166px;
+    border-top:1px solid #79585a;
+    margin-left:66px;
+    margin-top:100px;
+    color:#ffffff;
+    float: left;
+  }
+  .main-right h1{
+    font-size:10px;
+    margin-top:26px;
+  }
+  .main-right h2{
+    font-size:16px;
+    margin-top:5px;
+    line-height:26px;
+  }
+  .main-right-date{
+    width:14px;
+    height:14px;
+    background-image:url(/Users/celene/GitHub/test2/img/Date-white.png);
+    margin-top:10px;
+  }
+  .main-right-date h2{
+    font-size:12px;
+    margin-bottom:42px;
+    margin-left:8px;
+  }
+  .main2{
+    width:1200px;
+    height:700px;
+    background-image:url(/Users/celene/GitHub/test2/img/main2.png);
+    overflow:hidden;
+    color:#ffffff;
+  }
+  .main2 h1{
+    font-size:24px;
+    margin-left:50px;
+    margin-top:40px;
+  }
+  .main2-top-right{
+    float: right;
+    width:18px;
+    height:15px;
+    background-image: url(/Users/celene/GitHub/test/img/banner-3-Sidebar.png);
+    margin-top:-38px;
+    margin-right:50px;
+  }
+  .main2 h2{
+    text-align: center;
+    font-size:9.5px;
+    margin-top:126px;
+  }
+  .main2 h3{
+    text-align: center;
+    font-size:38px;
+    margin-top:26px;
+  }
+  .main2-button{
+    margin-left: 515px;
+    width:170px;
+    height:42px;
+    font-size:11px;
+    border-radius:20px;
+    background:#daf2ec;
+    border:none;
+    display: block;
+    margin-top:40px;
+  }
+  .main2-icon1{
+    width:12px;
+    height:12px;
+    float:right;
+    background-image: url(/Users/celene/GitHub/test/img/Ellipse 2.png);
+    background-color:#ffffff;
+    margin-right:50px;
+    margin-top:-182px;
+  }
+  .main2-icon2{
+    width:12px;
+    height:12px;
+    float:right;
+    background-image: url(/Users/celene/GitHub/test/img/Ellipse 2 copy.png);
+    background-color:#ffffff;
+    margin-right:50px;
+    margin-top:-204px;
+  }
+  .main2-icon3{
+    width:12px;
+    height:12px;
+    float:right;
+    background-image: url(/Users/celene/GitHub/test/img/Ellipse 2 copy 2.png);
+    background-color:#ffffff;
+    margin-right:50px;
+    margin-top:-226px;
+  }
+  .main2-buttom-left{
+    font-size: 9.5px;
+    margin-left:50px;
+    float: left;
+    margin-top:150px;
+  }
+  .main2-buttom-center{
+    float: left;
+    margin-left:442px;
+    width:12px;
+    height:7px;
+    background-image: url(/Users/celene/GitHub/test2/img/Down.png);
+    margin-top:150px;
+  }
+  .main2-buttom-right{
+    font-size: 9.5px;
+    margin-right:50px;
+    float: right;
+    margin-top:150px
+  }
+  .main3{
+    width:1200px;
+    height:600px;
+    background-image: url(/Users/celene/GitHub/test2/img/background-4.png);
+    overflow:hidden;
+    color:#ffffff;
+  }
+  .main3 h1{
+    font-size:37px;
+    margin-left:110px;
+    margin-top:96px;
+  }
+  .main3 h2{
+    font-size:15px;
+    line-height:30px;
+    margin-left:114px;
+    margin-top:45px;
+  }
+  .main3 h3{
+    font-size:14px;
+    width:14px;
+    height:92px;
+    transform:rotate(-90deg);
+    margin-left:100px;
+    margin-top:-180px;
+  }
+  .main3 h4{
+    font-size:14px;
+    width:24px;
+    height:34px;
+    transform:rotate(-90deg);
+    margin-left:56px;
+    margin-top:-15px;
+  }
+  .main3 h4 span{
+    font-size:24px;
+  }
+  .main3-left1{
+    width:34px;
+    height:34px;
+    border:2px solid #ffffff;
+    background-image: url(/Users/celene/GitHub/test2/img/bg4-Left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left:120px;
+    margin-top:150px;
+    float: left;
+  }
+  .main3-left2{
+    width:34px;
+    height:34px;
+    border:2px solid #ffffff;
+    background-image: url(/Users/celene/GitHub/test2/img/bg4-Rigth.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left:2px;
+    margin-top:150px;
+    float: left;
+  }
+  .main3-right1{
     width:100px;
-    background-color:blue;
+    height:100px;
+    background-image: url(/Users/celene/GitHub/test2/img/bg4-1.png);
+    margin-left:1020px;
+    margin-top:-180px;
+  }
+  .main3-right2{
+    width:100px;
+    height:100px;
+    background-image: url(/Users/celene/GitHub/test2/img/bg4-2.png);
+    margin-left:1020px;
+    margin-top:34px;
+  }
+  .main3-right3{
+    width:100px;
+    height:100px;
+    background-image: url(/Users/celene/GitHub/test2/img/bg4-3.png);
+    margin-left:1020px;
+    margin-top:34px;
   }
   </style>
   </head>
-<body>
-  <div class="box">
-    <div></div>
+
+<body class="body">
+  <div class="banner">
+    <div class="banner-icon">TRAVEL</div>
+    <div class="banner-text1"><h1>The Ultimate Cure for<h1>Your Next Hangover</div>
+    <div class="banner-text2"><h5>A couple of the objects that live on my bedside table are some Aesop hand cream and a <h5>meditation singing bowl that doubles as a toy for my little 11-month-old, Finn, who’s <h5>drawn to its shiny brass and its ability to make music. </div>
+    <div class="banner-icon-left"></div>
+    <div class="banner-icon-right"></div>
+    <div class="banner-left"><h5>by Creanncy</div>
+    <div class="banner-center"><img class="bullet-1" src="/Users/celene/GitHub/test2/img/Bullet Active.png"><img class="bullet-2" src="/Users/celene/GitHub/test2/img/Bullet.png"><img class="bullet-3" src="/Users/celene/GitHub/test2/img/Bullet3.png"></div>
+    <div class="banner-right">
+      <div class="comment-text">43</div>
+      <div class="comment"></div>
+      <div class="like-text">5472</div>
+      <div class="like"></div>
+      <div class="date-text">July 04, 2015&nbsp;10:11&nbsp;pm</div>
+      <div class="date"></div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="travel">TRAVEL</div>
+    <div class="text">What Celebrities Actually Wear </br>on Flights</div>
+    <div class="main-comment">
+      <div class="main-deat"></div>
+      <div class="main-deat-text">July 04, 2015&nbsp;10:11&nbsp;pm</div>
+      <div class="main-like"></div>
+      <div class="main-like-text">5472</div>
+      <div class="main-comm"></div>
+      <div class="main-comm-text">43</div>
+      <div class="main-bytext">by <span>Creanncy</span></div>
+    </div>
+    <div class="main-left"><h1>TRAVEL</h1><h2>A Former Facebook Employee Is</br> Building the Hotel of the Future</h2>
+      <div class="main-left-date"><h2>July&nbsp;04,2015&nbsp;/&nbsp;Comments&nbsp;4</h2></div>
+    </div>
+    <div class="main-center"><h1>INSPIRATION</h1><h2>Why Everyone Should Stay in</br> Downtown L.A.</h2>
+      <div class="main-center-date"><h2>July&nbsp;04,2015&nbsp;/&nbsp;Comments&nbsp;4</h2></div>
+    </div>
+    <div class="main-right"><h1>TRAVEL</h1><h2>The Ultimate Cure for Your Next</br> Hangover</h2>
+      <div class="main-right-date"><h2>July&nbsp;04,2015&nbsp;/&nbsp;Comments&nbsp;4</h2></div>
+    </div>
+  </div>
+  <div class="main2">
+    <h1>DAILY</h1>
+    <div class="main2-top-right"></div>
+    <h2>AGENCY</h2>
+    <h3>Star Wars Characters</br> Dressed in Modern Day</br> Streetwear</h3>
+    <button type="button"  class="main2-button">VIEW MORE</button>
+    <div class="main2-icon1"></div>
+    <div class="main2-icon2"></div>
+    <div class="main2-icon3"></div>
+    <div class="main2-buttom-left">CREATIVE AGENCY</div>
+    <div class="main2-buttom-center"></div>
+    <div class="main2-buttom-right">MAKING LIFE BETTER</div>
+  </div>
+  <div class="main3">
+    <h1>The Ultimate Cure for </br>Your Next Hangover</h1>
+    <h2>A couple of the objects that live on my bedside table are some Aesop hand cream and a</br> meditation singing bowl that doubles as a toy for my little 11-month-old, Finn, who’s</br> drawn to its shiny brass and its ability to make music. </h2>
+    <h3>INSPIRATION</h3>
+    <h4><span>2</span>/7</h4>
+    <div class="main3-left1"></div>
+    <div class="main3-left2"></div>
+    <div class="main3-right1"></div>
+    <div class="main3-right2"></div>
+    <div class="main3-right3"></div>
   </div>
 
-  <div class="left">11111<div>
 </body>
 </html>
